@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.1/dist/css/foundation.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #head{
+            font-size: 40px;
+            margin-right: 30px;
+            text-align: center;
+            font-family: cursive;
+        }
+    </style>
+    <script>
+        alert("Welcome to Bsc.Supermarket");
+        function size(){
+            document.getElementById("kas").style.fontSize="125%"
+        }
+        function size1(){
+            document.getElementById("kas").style.fontSize="100%" 
+            
+        }
+        function size3(){
+            document.getElementById("hch").style.fontSize="125%"
+        }
+        function size4(){
+            document.getElementById("hch").style.fontSize="100%" 
+            
+        }
+        var ans = prompt("What is your name?");
+    </script>
+    </head>
+    <body>
+      
+        <div class="container">
+            <hr>
+            <div class="row">
+               <div class="col"><p id="head">Bsc. Supermarket</p></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col"><marquee>SALE  SALE    SALE    SALE    SALE    SALE    SALE    SALE    SALE    SALE    SALE    SALE      </marquee></div>
+            </div>
+            <hr>
+            
+            <div class="row">
+                <div class="col-2" id="kas" onmouseover="size()" onmouseout="size1()">Homepage</div><!-- have used java script-->
+                <div class="col-2" id="hch" onmouseover="size3()" onmouseout="size4()">All products</div>
+                <div class="col align-self-end"><input type="text" placeholder="search..."></div>
+            </div>
+           
+            <h1>Fruits</h1>
+            <div class="row">
+                <div class="col-4" >
+                    <div class="card">
+                        <img src="apple.jpeg" class="card-img-top" alt="Apple" style="height:175px">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple</h5>
+						    <p class="card-text">Rs. 75/-</p>
+							<a href="#1" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" >
+                        <img src="mango.jpeg" class="card-img-top" alt="Mango" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Mango</h5>
+                            <p class="card-text">Rs. 150/-</p>
+                            <a href="#2" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="banana.jpeg" class="card-img-top" alt="Banana" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Banana</h5>
+                            <p class="card-text">Rs. 50/-</p>
+                            <a href="#3" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h1>Veggies</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="carrot.jpeg" class="card-img-top" alt="Carrot" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Carrot</h5>
+                            <p class="card-text">Rs.25/-</p>
+                            <a href="#4" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="potato.jpeg" class="card-img-top" alt="Potato" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Potato</h5>
+                            <p class="card-text">Rs.35/-</p>
+                            <a href="#4" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="cauliflower.jpeg" class="card-img-top" alt="Cauliflower" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cauliflower</h5>
+                            <p class="card-text">Rs.55/-</p>
+                            <a href="#4" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <hr>
+            <p id="name">Shopping cart for : <script>document.write(ans)</script></p><!--js-->
+
+        
+            
+
+        </div>
+    </body>
+</html> 
